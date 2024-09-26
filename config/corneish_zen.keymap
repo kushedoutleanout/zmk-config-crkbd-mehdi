@@ -84,6 +84,7 @@
         };
 
         layer_3 {
+            display-name = "LE FUN";
             bindings = <
 &none  &none  &none  &none  &none  &none    &rgb_ug RGB_ON    &rgb_ug RGB_OFF    &none  &none  &none  &bootloader
 &none  &none  &none  &none  &none  &none    &ext_power EP_ON  &ext_power EP_OFF  &none  &none  &none  &none
