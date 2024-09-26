@@ -29,11 +29,25 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        bksp {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 18>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "QWERTY";
+            display-name = "LE BASE";
 
             // --------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
@@ -50,7 +64,7 @@
         };
 
         lower_layer {
-            display-name = "NUMBER";
+            display-name = "LE NUM";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -60,14 +74,14 @@
 
             bindings = <
 &kp ENTER  &kp N7  &kp N8  &kp N9  &kp N0     &none                     &none   &none     &kp UP_ARROW  &none           &kp PG_UP  &none
-&mo 2      &kp N4  &kp N5  &kp N6  &kp PLUS   &none                     &none   &kp DOWN  &kp UP        &kp RIGHT       &kp PG_DN  &trans
+&mo 2      &kp N4  &kp N5  &kp N6  &kp PLUS   &none                     &none   &kp LEFT  &kp UP        &kp RIGHT       &kp PG_DN  &trans
 &none      &kp N1  &kp N2  &kp N3  &kp MINUS  &kp LS(LG(LEFT_ARROW))    &none   &none     &none         &kp UNDERSCORE  &kp MINUS  &kp LGUI
                            &trans  &trans     &trans                    &trans  &trans    &trans
             >;
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "LE FUN";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -84,13 +98,22 @@
         };
 
         layer_3 {
-            display-name = "LE FUN";
+            display-name = "LE OPS";
             bindings = <
 &none  &none  &none  &none  &none  &none    &rgb_ug RGB_ON    &rgb_ug RGB_OFF    &none  &none  &none  &bootloader
 &none  &none  &none  &none  &none  &none    &ext_power EP_ON  &ext_power EP_OFF  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none             &none              &none  &none  &none  &sys_reset
                      &none  &none  &none    &none             &none              &none
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        lefun {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
