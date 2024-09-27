@@ -50,10 +50,11 @@
         ipad_prnt {
             bindings = <&kp LS(LG(NUMBER_3))>;
             key-positions = <10 11>;
+            layers = <2>;
         };
 
-        blndf24 {
-            bindings = <&kp F24>;
+        blender_num1 {
+            bindings = <&kp KP_NUMBER_1>;
             key-positions = <13 14>;
         };
     };
