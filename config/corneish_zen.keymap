@@ -50,7 +50,6 @@
         ipad_prnt {
             bindings = <&kp LS(LG(NUMBER_3))>;
             key-positions = <10 11>;
-            layers = <2>;
         };
 
         blender_num1 {
