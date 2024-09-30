@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -143,10 +144,10 @@
 
         SYMBOL {
             bindings = <
-&none   &kp STAR     &kp CARET      &kp GRAVE      &kp TILDE  &none     &none   &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans
-&trans  &kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp MINUS  &none     &none   &kp UNDER       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI         &trans
-&trans  &kp SLASH    &kp BACKSLASH  &kp PIPE       &kp PLUS   &none     &none   &kp EQUAL       &kp HASH              &kp AT_SIGN            &kp EXCLAMATION  &trans
-                                    &trans         &trans     &trans    &trans  &trans          &trans
+&none   &kp STAR     &kp CARET      &kp GRAVE      &kp TILDE  &bt BT_CLR      &bt BT_SEL 2  &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans
+&trans  &kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp MINUS  &bt BT_SEL 0    &none         &kp UNDER       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI         &trans
+&trans  &kp SLASH    &kp BACKSLASH  &kp PIPE       &kp PLUS   &bt BT_SEL 1    &none         &kp EQUAL       &kp HASH              &kp AT_SIGN            &kp EXCLAMATION  &trans
+                                    &trans         &trans     &trans          &trans        &trans          &trans
             >;
 
             label = "SYMBOL";
@@ -154,10 +155,10 @@
 
         MIRROR {
             bindings = <
-&trans  &kp Y  &kp U  &kp I      &kp O    &kp P       &none  &none  &none  &none  &none  &none
-&trans  &kp H  &kp J  &kp K      &kp L    &kp SEMI    &none  &none  &none  &none  &none  &none
-&trans  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH    &none  &none  &none  &none  &none  &none
-                      &none      &none    &none       &none  &none  &none
+&kp LEFT_ALT    &kp Y  &kp U  &kp I      &kp O    &kp P       &none  &none  &none  &none  &none  &none
+&kp LEFT_SHIFT  &kp H  &kp J  &kp K      &kp L    &kp SEMI    &none  &none  &none  &none  &none  &none
+&kp LCTRL       &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH    &none  &none  &none  &none  &none  &none
+                              &trans     &trans   &trans      &none  &none  &none
             >;
         };
     };
