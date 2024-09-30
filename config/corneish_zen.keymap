@@ -125,7 +125,7 @@
 &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P         &kp COLON
 &td0     &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp APOS      &kp RSHFT
 &td2     &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp QUESTION  &mo 4
-                       &td1   &td3   &kp SPACE    &kp ENTER  &mo 4  &mo 2
+                       &td1   &td3   &kp SPACE    &kp ENTER  &mo 2  &mo 1
             >;
         };
 
