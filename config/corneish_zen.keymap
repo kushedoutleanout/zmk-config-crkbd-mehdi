@@ -24,7 +24,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         td1: td1 {
@@ -33,7 +33,7 @@
             #binding-cells = <0>;
             bindings = <&mo 1>, <&kp LEFT_GUI>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         td2: td2 {
@@ -42,7 +42,7 @@
             #binding-cells = <0>;
             bindings = <&kp LCTRL>, <&mo 2>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         td3: td3 {
@@ -51,7 +51,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT>, <&mo 3>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
     };
 
@@ -141,11 +141,6 @@
         nummulti {
             bindings = <&kp KP_ASTERISK>;
             key-positions = <26 15 28>;
-        };
-
-        numdot {
-            bindings = <&kp C_PP>;
-            key-positions = <13 2 15>;
         };
     };
 
