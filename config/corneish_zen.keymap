@@ -33,76 +33,91 @@
         bksp {
             bindings = <&kp BACKSPACE>;
             key-positions = <20 21>;
+            layers = <0>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
+            layers = <0>;
         };
 
         Delete {
             bindings = <&kp DEL>;
             key-positions = <1 2>;
+            layers = <0>;
         };
 
         one {
             bindings = <&kp NUMBER_1>;
             key-positions = <13 14>;
+            layers = <0>;
         };
 
         two {
             bindings = <&kp NUMBER_2>;
             key-positions = <15 14>;
+            layers = <0>;
         };
 
         three {
             bindings = <&kp NUMBER_3>;
             key-positions = <27 26>;
+            layers = <0>;
         };
 
         four {
             bindings = <&kp NUMBER_4>;
             key-positions = <26 25>;
+            layers = <0>;
         };
 
         five {
             bindings = <&kp N5>;
             key-positions = <27 28>;
+            layers = <0>;
         };
 
         six {
             bindings = <&kp NUMBER_6>;
             key-positions = <15 16>;
+            layers = <0>;
         };
 
         seven {
             bindings = <&kp N7>;
             key-positions = <15 26>;
+            layers = <0>;
         };
 
         eight {
             bindings = <&kp N8>;
             key-positions = <16 27>;
+            layers = <0>;
         };
 
         nine {
             bindings = <&kp N9>;
             key-positions = <25 14>;
+            layers = <0>;
         };
 
         zero {
             bindings = <&kp N0>;
             key-positions = <14 27>;
+            layers = <0>;
         };
 
         tiret {
             bindings = <&kp MINUS>;
             key-positions = <15 28>;
+            layers = <0>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <13 26>;
+            layers = <0>;
         };
     };
 
