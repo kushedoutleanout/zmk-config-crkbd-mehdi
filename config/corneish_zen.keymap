@@ -134,9 +134,9 @@
         base {
             display-name = "BASE";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E  &kp R         &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P         &kp COLON
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F         &kp G        &kp H      &kp J  &kp K      &kp L    &kp APOS      &kp RSHFT
-&kp LCTRL       &kp Z  &kp X  &kp C  &kp V         &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp QUESTION  &mo 3
+&kp TAB         &kp Q  &kp W  &kp E  &kp R         &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P      &kp COLON
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F         &kp G        &kp H      &kp J  &kp K      &kp L    &kp APOS   &kp RSHFT
+&kp LCTRL       &kp Z  &kp X  &kp C  &kp V         &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH  &mo 3
                               &td1   &kp LEFT_ALT  &kp SPACE    &kp ENTER  &mo 2  &mo 1
             >;
         };
@@ -163,9 +163,9 @@
 
         symbol {
             bindings = <
-&none  &kp STAR     &kp CARET      &kp GRAVE      &kp TILDE  &bt BT_CLR      &bt BT_SEL 2     &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &none
-&none  &kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp MINUS  &bt BT_SEL 0    &rgb_ug RGB_TOG  &kp UNDER       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI         &none
-&none  &kp SLASH    &kp BACKSLASH  &kp PIPE       &kp PLUS   &bt BT_SEL 1    &rgb_ug RGB_HUI  &kp EQUAL       &kp HASH              &kp AT_SIGN            &kp EXCLAMATION  &none
+&none  &kp STAR     &kp CARET      &kp GRAVE      &kp TILDE  &bt BT_CLR      &bt BT_SEL 2     &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &rgb_ug RGB_SAD
+&none  &kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp MINUS  &bt BT_SEL 0    &rgb_ug RGB_TOG  &kp UNDER       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCL         &rgb_ug RGB_BRD
+&none  &none        &kp BACKSLASH  &kp PIPE       &kp PLUS   &bt BT_SEL 1    &rgb_ug RGB_HUI  &kp EQUAL       &kp HASH              &kp AT_SIGN            &kp SEMI         &none
                                    &trans         &trans     &trans          &trans           &trans          &trans
             >;
 
