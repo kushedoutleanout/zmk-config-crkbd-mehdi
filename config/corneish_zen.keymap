@@ -163,10 +163,10 @@
 
         symbol {
             bindings = <
-&none  &kp STAR     &kp CARET      &kp GRAVE      &kp TILDE  &bt BT_CLR      &bt BT_SEL 2     &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &rgb_ug RGB_SAD
-&none  &kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp MINUS  &bt BT_SEL 0    &rgb_ug RGB_TOG  &kp UNDER       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCL         &rgb_ug RGB_BRD
-&none  &none        &kp BACKSLASH  &kp PIPE       &kp PLUS   &bt BT_SEL 1    &rgb_ug RGB_HUI  &kp EQUAL       &kp HASH              &kp AT_SIGN            &kp SEMI         &none
-                                   &trans         &trans     &trans          &trans           &trans          &trans
+&none  &none  &none  &none   &none   &bt BT_CLR      &bt BT_SEL 2     &none   &none   &none  &none  &rgb_ug RGB_SAD
+&none  &none  &none  &none   &none   &bt BT_SEL 0    &rgb_ug RGB_TOG  &none   &none   &none  &none  &rgb_ug RGB_BRD
+&none  &none  &none  &none   &none   &bt BT_SEL 1    &rgb_ug RGB_HUI  &none   &none   &none  &none  &none
+                     &trans  &trans  &trans          &trans           &trans  &trans
             >;
 
             label = "SYMBOL";
